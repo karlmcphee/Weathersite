@@ -7,9 +7,12 @@ const WeatherWindow = ({ data, w_icon, cdate }) => {
     d.setDate(d.getDate() + cdate); 
     const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     return (
-        <div>
-            <img src={link} />
-            <div>{d.toLocaleString("default", { weekday: "long" })}: The temperature will be {data}<br/><br/></div>
+        <div className="item">
+             <h5><span><div style={{textAlign: 'center'}}>
+             {d.toLocaleString("default", { weekday: "long" })}
+             </div><div style={{textAlign: 'center'}}>
+                 <img src={link}  /></div></span> 
+            <br />Temperature: {data}°</h5><br /><br />
         </div>
     )
 }

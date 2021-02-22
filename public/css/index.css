@@ -1,0 +1,4 @@
+.table {
+	display: table;   /* Allow the centering to work */
+	margin: 0 auto;
+}
